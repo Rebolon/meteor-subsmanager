@@ -1,0 +1,7 @@
+{
+  "packages": {
+    "iron-router": {},
+    "fast-render": {},
+    "subs-manager": {}
+  }
+}

@@ -1,0 +1,10 @@
+<template name="providers_leboncoin_annonce_main">
+  {{#if updated.date}}
+  <span class="glyphicon glyphicon-refresh" title="{{updated.date}}"></span>&nbsp;
+  {{/if}}
+  <a href="{{this.link}}" class="annonce annonce-{{status}}" target="_blank">{{#if statusIcon}}<span class="glyphicon glyphicon-{{statusIcon}}"></span>{{/if}} <span class="infosHead">{{! category}} {{place}}<br />
+    {{title}}</span><br />
+<div class="pull-left">{{date}} {{time}}</div><div class="pull-right">{{> providers_leboncoin_annonce_price}}</div><br />
+    {{#if hasDetail}}tel: {{#if detail.contact.phone}}<img src="/img/annonces/phone/{{_id}}" />{{else}}<small style="color:black;">pas de téléphone</small>{{/if}}{{/if}}<br />
+  </a>
+</template>

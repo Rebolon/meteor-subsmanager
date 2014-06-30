@@ -1,0 +1,13 @@
+<template name="providers_lacentrale_annonce_price">
+  {{#if hasUpdatedPrice}}
+    {{#if not priceInt}}
+      {{updated.price}}
+    {{else}}
+      <i class="glyphicon glyphicon-arrow-{{getDiffPriceArrow}}" title="({{getDiffPrice}}) {{updated.price}}"></i>{{priceInt}}
+    {{/if}}&euro;
+  {{/if}}
+
+  {{#unless hasUpdatedPrice}}
+        {{#if priceInt}}{{priceInt}}&euro;{{/if}}
+  {{/unless}}
+</template>

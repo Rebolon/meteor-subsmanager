@@ -1,0 +1,23 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+jquery
+http
+accounts-base
+accounts-password
+handlebars
+email
+collectionFS
+accounts-ui-bootstrap-3
+gravatar
+appcache
+iron-router
+less
+npm
+bootstrap-3
+fast-render
+kadira
+subs-manager

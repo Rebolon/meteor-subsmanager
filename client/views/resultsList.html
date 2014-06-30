@@ -1,0 +1,11 @@
+<template name="resultsList">
+  {{#if selectedSearch}}
+    {{#if annoncesCount}}
+    <div class="row">
+      {{#each annonces}}
+      <div>{{title}}</div>
+      {{/each}}
+    </div>
+    {{/if}}
+  {{/if}}
+</template>

@@ -1,0 +1,10 @@
+<template name="providers_lacentrale_annonce_detail">
+    <small class="popoverContent">{{title}}<br />
+    {{date}} {{time}} - {{> providers_lacentrale_annonce_price}}<br />
+    {{getDescription}}<br />
+    {{#if hasImage}}
+    <img src="/img/annonces/{{_id}}" style="max-height:105px">
+    {{/if}}
+    {{#unless hasImage}}<img src="/img/no_photo_icon.jpg" style="max-height:105px;">{{/unless}}
+    </small>
+</template>
